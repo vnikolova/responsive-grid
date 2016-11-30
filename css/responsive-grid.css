@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  width: 100%;
+  flex: 1;
+}
+
+.start {
+  justify-content: start;
+}
+
+.center {
+  justify-content: center;
+}
