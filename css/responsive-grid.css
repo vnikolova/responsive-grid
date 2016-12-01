@@ -1,3 +1,9 @@
+/*
+* A responsive grid layout
+* written by vnikolova 12/16
+* supports auto row width, row of 4,8 and 12 columns
+*/
+
 /* base classes for all screen sizes */
 html, body {
   margin: 0;
@@ -19,15 +25,31 @@ html, body {
 .full {
   flex: 0 0 100%;
 }
-.col-1of2 {
+
+.col-1of2, .col-4of8 {
   flex: 0 0 50%
 }
 
 .col-1of3 {
   flex: 0 0 33.3333%
 }
-.col-1of4 {
+.col-2of3 {
+  flex: 0 0 66.6666%
+}
+.col-1of4, .col-2of8 {
   flex: 0 0 25%
+}
+.col-1of8 {
+  flex:0 0 12.5%
+}
+.col-3of8 {
+  flex: 0 0 37.5%
+}
+.col-5of8 {
+  flex: 0 0 62.5%
+}
+.col-6of8 {
+  flex: 0 0 75%
 }
 
 /* row alignment */
@@ -68,15 +90,33 @@ html, body {
   .sm-full {
     flex: 0 0 100%;
   }
-  .sm-1of2 {
+
+  .sm-1of2, .sm-4of8 {
     flex: 0 0 50%
   }
+
   .sm-1of3 {
     flex: 0 0 33.3333%
   }
-  .sm-1of4 {
+  .sm-2of3 {
+    flex: 0 0 66.6666%
+  }
+  .sm-1of4, .sm-2of8 {
     flex: 0 0 25%
   }
+  .sm-1of8 {
+    flex:0 0 12.5%
+  }
+  .sm-3of8 {
+    flex: 0 0 37.5%
+  }
+  .sm-5of8 {
+    flex: 0 0 62.5%
+  }
+  .sm-6of8 {
+    flex: 0 0 75%
+  }
+
 }
 
 /* large */
@@ -87,13 +127,31 @@ html, body {
   .lg-full {
     flex: 0 0 100%;
   }
-  .lg-1of2 {
+
+  .lg-1of2, .lg-4of8 {
     flex: 0 0 50%
   }
+
   .lg-1of3 {
     flex: 0 0 33.3333%
   }
-  .lg-1of4 {
+  .lg-2of3 {
+    flex: 0 0 66.6666%
+  }
+  .lg-1of4, .lg-2of8 {
     flex: 0 0 25%
   }
+  .lg-1of8 {
+    flex:0 0 12.5%
+  }
+  .lg-3of8 {
+    flex: 0 0 37.5%
+  }
+  .lg-5of8 {
+    flex: 0 0 62.5%
+  }
+  .lg-6of8 {
+    flex: 0 0 75%
+  }
+
 }
