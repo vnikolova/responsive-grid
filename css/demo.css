@@ -1,5 +1,15 @@
-.col {
+.box {
   background-color: blue;
-  padding: 1rem;
-  border: 1px solid white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nested-box {
+  background-color: green;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  font-weight: bold;
 }
