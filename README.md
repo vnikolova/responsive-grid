@@ -23,14 +23,14 @@
 
 .col - auto width to fill the entire row
 
-.full - full-wodth, 100%
+.full - full-width, 100%
 
-.1of2, .1of3, .1of4 - the width is 1/2,1/3 or 1/4 of the row
+.col-1of2, .col-1of3, .col-1of4 - the width is 1/2,1/3 or 1/4 of the row
 
 .sm-1of2, .sm-full, lg-1of2. lg-full etc.
 
 ###Row alignments:
-.top, .bottom, .center
+.start, .end, .center
 
 ###Column alignments:
 
