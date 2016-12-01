@@ -4,70 +4,93 @@
     <meta charset="utf-8">
     <title>Responsive Grid</title>
     <link rel="stylesheet" href="./css/responsive-grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./css/demo.css">
   </head>
   <body>
     <h2>Rows and Columns</h2>
     <div class="row center">
-      <div class="box col">
-        .col
+      <div class="col">
+        <div class="box">col</div>
       </div>
-      <div class="box col">
-        .col
+      <div class="col">
+        <div class="box">col</div>
       </div>
-      <div class="box col">
-        .col align-center
+      <div class="col">
+        <div class="box">col</div>
       </div>
-      <div class="box col">
-        .col
+      <div class="col">
+        <div class="box">col</div>
       </div>
     </div>
     <h3>.row .center</h3>
     <div class="row center">
-      <div class="box lg-1of3 sm-full">
-        .lg-1of3 .sm-full
+      <div class="col lg-1of3 sm-full">
+        <div class="box">col lg-1of3 sm-full</div>
       </div>
-      <div class="box lg-1of3 sm-full ">
-        .lg-1of3 .sm-full
+      <div class="col lg-1of3 sm-full">
+        <div class="box">.col lg-1of3 sm-full</div>
       </div>
-      <div class="box lg-1of3 sm-full">
-        .lg-1of3 .sm-full
+      <div class="col lg-1of3 sm-full">
+        <div class="box">.col lg-1of3 sm-full</div>
       </div>
     </div>
 
     <h3>Nested rows and cols</h3>
-    <div class="row">
-      <div class="col 1of2 box">
+    <div class="row center">
+
+      <div class="split-box col 1of2">
         col 1of2
-        <div class="row">
-          <div class="nested-box col sm-1of2 lg-1of4">
-            .sm-1of2
+        <div class="row center">
+          <div class="col sm-1of2 lg-1of4">
+            <div class="nested-box">col sm-1of2 lg-1of4</div>
           </div>
-          <div class="nested-box col sm-1of2 lg-1of4 align-center">
-            .lg-1of4
+          <div class="col sm-1of2 lg-1of4">
+            <div class="nested-box">align-center</div>
           </div>
-          <div class="nested-box col sm-1of2 lg-1of4 align-center">
-            .lg-1of4
+          <div class="col sm-1of2 lg-1of4">
+            <div class="nested-box">align-bottom</div>
           </div>
-          <div class="nested-box col sm-1of2 lg-1of4 align-center">
-            .lg-1of4
+          <div class="col sm-1of2 lg-1of4">
+            <div class="nested-box">align-top</div>
           </div>
         </div>
-
       </div>
-      <div class="col 1of2 box">
+
+      <div class="col 1of2 split-box">
         col 1of2
         <div class="row">
-          <div class="nested-box col sm-full lg-1of2 align-top">
-            sm-full top
+          <div class="col sm-full lg-1of2 align-top">
+            <div class="nested-box">col sm-full lg-1of2 align-top</div>
           </div>
-          <div class="nested-box col sm-full lg-1of2 align-bottom">
-            lg-1of2 bottom
+          <div class="col sm-full lg-1of2 align-bottom">
+            <div class="nested-box">col sm-full lg-1of2 align-bottom</div>
           </div>
         </div>
-
       </div>
 
+    </div> <!-- end of row -->
+
+    <h3>Row .center</h3>
+    <div class="row center">
+      <div class="col-1of4">
+        <div class="box"></div>
+      </div>
+      <div class="col-1of4">
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <h3>Row .start</h3>
+    <div class="row start">
+      <div class="box col-1of4 align-top">align-top</div>
+      <div class="box col-1of4 align-bottom">align-bottom</div>
+    </div>
+
+    <h3>Row .end</h3>
+    <div class="row end">
+      <div class="box col-1of4 align-center">align-center</div>
+      <div class="box col-1of4"></div>
     </div>
   </body>
 </html>

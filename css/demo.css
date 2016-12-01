@@ -1,15 +1,24 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .box {
-  background-color: blue;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  background: #64B5F6;
+  height: 60px;
+  border: 2px solid white;
   color: white;
   font-weight: bold;
 }
-
+.split-box {
+  background: #64B5F6;
+  height: 100px;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+}
 .nested-box {
-  background-color: green;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  background: #9CCC65;
+  height: 50px;
+  border: 2px solid white;
   color: white;
   font-weight: bold;
 }
